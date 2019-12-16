@@ -13,10 +13,9 @@ function App() {
       </Spinner>
       <footer>
         <small>
-          Images provided by CC BY-SA 3.0,&nbsp;
-          <a href="CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=892208">
-            https://commons.wikimedia.org/w/index.php?curid=892208
-          </a>
+          Images provided by&nbsp;
+          <a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>,&nbsp;
+          <a href="https://commons.wikimedia.org/w/index.php?curid=892208">Link</a>
         </small>
       </footer>
     </div>
