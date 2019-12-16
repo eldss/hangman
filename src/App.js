@@ -1,16 +1,14 @@
 import React from 'react';
-import { Spinner } from 'react-bootstrap';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import HangmanImage from './components/HangmanImage';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Testing</h1>
-      <Spinner animation="border" role="status">
-        <span className="sr-only">Loading...</span>
-      </Spinner>
+      <h1>Hangman</h1>
+      <HangmanImage step={6} />
       <footer>
         <small>
           Images provided by&nbsp;
