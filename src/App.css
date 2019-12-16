@@ -3,4 +3,10 @@
   height: 100vh;
   justify-content: center;
   align-items: center;
+  flex-flow: column nowrap;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
 }
