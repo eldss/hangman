@@ -13,13 +13,6 @@ function App() {
       <HangmanImage step={0} />
       <Word word="Hello" displayChars={new Set(['H', 'O'])} />
       <ButtonArray />
-      <footer>
-        <small>
-          Images provided by&nbsp;
-          <a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>,&nbsp;
-          <a href="https://commons.wikimedia.org/w/index.php?curid=892208">Link</a>
-        </small>
-      </footer>
     </div>
   );
 }

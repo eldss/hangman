@@ -1,0 +1,8 @@
+.HangmanImage {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.HangmanImage small {
+    margin: 0;
+}
