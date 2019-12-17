@@ -8,7 +8,7 @@ const Word = (props) => {
 
     for (let i = 0; i < len; i++) {
         let char = props.word.charAt(i);
-        if (props.displayChars.has(char.toUpperCase())) {
+        if (props.correctGuesses.has(char.toUpperCase())) {
             letters[i] = char;
         }
     }
