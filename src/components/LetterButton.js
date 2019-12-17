@@ -6,8 +6,10 @@ import '../styles/LetterButton.css';
 const LetterButton = (props) => {
     return ( 
         <Button
-        variant="outline-warning"
-        className="LetterButton">
+        variant={props.variant}
+        disabled={props.guessed}
+        className="LetterButton"
+        onClick={props.onClick}>
             {props.letter}
         </Button>
     );
