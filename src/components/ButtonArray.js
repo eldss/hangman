@@ -8,9 +8,8 @@ const ButtonArray = (props) => {
     const alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     let guessed;
     let type;  // String corresponding to Bootstrap colors
-    console.log(props.right);
-    console.log(props.wrong);
     const btns = [...alpha].map(letter => {
+        // Set up values
         if (props.right.has(letter)) {
             type = "success";
             guessed = true;
@@ -20,6 +19,12 @@ const ButtonArray = (props) => {
         } else {
             type = "outline-warning";
             guessed = false;
+        }
+
+        // Override guessed if game is over
+        // Will disable all child buttons
+        if (props.gameOver) {
+            guessed = true;
         }
 
         return (<LetterButton

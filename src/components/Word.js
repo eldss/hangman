@@ -14,8 +14,8 @@ const Word = (props) => {
     }
 
     return ( 
-        <h2 className="Word">{letters.join("")}</h2>
+        <h2 className={`Word`}>{letters.join("")}</h2>
     );
 }
- 
+
 export default Word;

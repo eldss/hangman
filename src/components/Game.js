@@ -11,7 +11,22 @@ const Game = (props) => {
     const [rightGuesses, setRightGuesses] = useState(new Set([]));
     const [wrongGuesses, setWrongGuesses] = useState(new Set([]));
 
+    /**
+     * Checks if the game has ended.
+     * @returns {boolean}
+     */
+    const checkEndGame = () => {
+        const MAX_ATTEMPTS = 6;
+        return (rightGuesses.size === props.word.length)
+            || (wrongGuesses.size === MAX_ATTEMPTS);
+    }
+
+    /**
+     * Handles click events for the letter buttons.
+     * @param {event} evt A click event
+     */
     const guessClickHandler = (evt) => {
+        // Update state values
         const char = evt.target.innerHTML;
         if (props.word.includes(char)) {
             setRightGuesses(prev => new Set(prev).add(char));
@@ -24,12 +39,14 @@ const Game = (props) => {
         <Container className="Game">
             <h1>Hangman</h1>
             <HangmanImage step={wrongGuesses.size} />
-            <Word word={props.word} rightGuesses={rightGuesses} />
+            <Word
+                word={props.word}
+                rightGuesses={rightGuesses} />
             <ButtonArray
-            right={rightGuesses}
-            wrong={wrongGuesses}
-            onClick={guessClickHandler}
-            />
+                right={rightGuesses}
+                wrong={wrongGuesses}
+                gameOver={checkEndGame()}
+                onClick={guessClickHandler} />
         </Container>
     );
 }
