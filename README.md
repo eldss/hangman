@@ -1,6 +1,10 @@
 # Hangman
 
-This is a simple implementation of the game Hangman using React.
+This is a simple implementation of the game Hangman using React. The game is an exercise to help me learn React so it is not hosted publicly. However, you can check it out by cloning the repo and following the instructions below.
+
+Cursory testing shows the game is only moderately responsive, so is best played on a larger screen.
+
+---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
