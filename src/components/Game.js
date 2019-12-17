@@ -10,7 +10,7 @@ import WordLenChooser from './WordLenChooser';
 const wordList = require('word-list-json');
 
 const Game = (props) => {
-    const MAX_LEN = 27;
+    const MAX_LEN = 11;
     const MIN_LEN = 2;
 
     const [word, setWord] = useState(getWord(MIN_LEN, MAX_LEN));
