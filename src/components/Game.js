@@ -5,6 +5,7 @@ import '../styles/Game.css';
 import HangmanImage from './HangmanImage';
 import Word from './Word';
 import ButtonArray from './ButtonArray';
+import WordLenChooser from './WordLenChooser';
 
 
 const Game = (props) => {
@@ -38,6 +39,7 @@ const Game = (props) => {
     return (
         <Container className="Game">
             <h1>Hangman</h1>
+            <WordLenChooser maxLen={props.maxLen} minLen={props.minLen} />
             <HangmanImage step={wrongGuesses.size} />
             <Word
                 word={props.word}
