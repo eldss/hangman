@@ -1,0 +1,8 @@
+.ButtonArray {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-width: 720px;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
